@@ -1,0 +1,58 @@
+@charset "UTF-8";
+footer, body {
+  position: absolute;
+  width: 100%;
+}
+
+@media (min-width: 500px) {
+  body {
+    background-color: red;
+  }
+}
+@media (max-width: 499px) {
+  body {
+    background-color: blue;
+  }
+}
+body {
+  background-color: #212126;
+  color: Gainsboro;
+}
+body > footer {
+  background-image: url("tactile_noise/tactile_noise.png");
+  background-repeat: repeat-x;
+}
+body #copyright::before, body #copyright::after {
+  content: "👻";
+}
+
+footer {
+  text-align: center;
+  bottom: 0;
+  padding: 10px;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+}
+
+td, th {
+  text-align: center;
+}
+
+.sheet {
+  padding-top: 50px;
+  background-color: #43434f;
+  height: 1975px;
+}
+
+.nav-pills {
+  background-color: #303038;
+}
+
+#attributes {
+  border: 5px;
+}
+
+/*# sourceMappingURL=universal-style.css.map */
