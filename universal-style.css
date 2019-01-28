@@ -18,11 +18,12 @@ body {
   background-color: #212126;
   color: Gainsboro;
 }
-body > footer {
+body div > footer {
   background-image: url("tactile_noise/tactile_noise.png");
   background-repeat: repeat-x;
 }
-body #copyright::before, body #copyright::after {
+
+#copyright::before, #copyright::after {
   content: "👻";
 }
 
@@ -35,14 +36,25 @@ footer {
 header {
   position: fixed;
   width: 100%;
+  z-index: 1;
+}
+
+thead {
+  background-color: #1a1c1e;
 }
 
 td, th {
   text-align: center;
+  word-wrap: break-word;
 }
 
-.col-3 {
-  background-color: red;
+table {
+  table-layout: fixed;
+}
+
+caption {
+  font-size: small;
+  padding-left: 11%;
 }
 
 .sheet {
@@ -53,10 +65,6 @@ td, th {
 
 .nav-pills {
   background-color: #303038;
-}
-
-#attributes {
-  border: 5px;
 }
 
 /*# sourceMappingURL=universal-style.css.map */

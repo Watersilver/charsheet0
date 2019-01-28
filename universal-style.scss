@@ -42,14 +42,14 @@ body {
   background-color: $site-background-color;
   color: $site-text-color;
 
-  >footer {
+  div>footer {
     background-image: url("tactile_noise/tactile_noise.png");
     background-repeat: repeat-x;
   }
+}
 
-  #copyright::before, #copyright::after {
-    content: "👻";
-  }
+#copyright::before, #copyright::after {
+  content: "👻";
 }
 
 footer {
@@ -62,18 +62,29 @@ footer {
 header {
   position: fixed;
   width: 100%;
+  z-index: 1;
   // text-align: center;
   // font-size: 200%;
   // top: 0;
   // padding: 10px;
 }
 
-td, th {
-  text-align: center;
+thead {
+  background-color: #1a1c1e;
 }
 
-.col-3 {
-  background-color: red
+td, th {
+  text-align: center;
+  word-wrap: break-word;
+}
+
+table {
+  table-layout: fixed;
+}
+
+caption {
+  font-size: small;
+  padding-left: 11%;
 }
 
 .sheet {
@@ -86,6 +97,19 @@ td, th {
   background-color: $navbar-color;
 }
 
-#attributes {
-  border: 5px;
+// Debug
+// Display grid
+// [class="row"] {
+//     outline: 1px dotted rgba(0, 0, 0, 0.25);
+// }
+//
+// [class^="col-"] {
+//     background-color: rgba(255, 0, 0, 0.2);
+//     outline: 1px dotted rgba(0, 0, 0, 0.5);
+// }
+
+// 69363f -- lighter
+// 442228 -- darker
+
+.fuck {
 }
