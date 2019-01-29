@@ -4,16 +4,6 @@ footer, body {
   width: 100%;
 }
 
-@media (min-width: 500px) {
-  body {
-    background-color: red;
-  }
-}
-@media (max-width: 499px) {
-  body {
-    background-color: blue;
-  }
-}
 body {
   min-height: 100vh;
   display: block;
@@ -59,6 +49,10 @@ caption {
   padding-left: 11%;
 }
 
+img {
+  width: 100%;
+}
+
 .sheet {
   padding-top: 75px;
   background-color: #43434f;
@@ -67,12 +61,26 @@ caption {
   min-height: 100vh;
   padding-bottom: 70px;
 }
+@media (min-width: 576px) {
+  .sheet {
+    background-color: #43434f;
+  }
+}
+@media (max-width: 575.98px) {
+  .sheet {
+    background-color: #212126;
+  }
+}
 
 .nav-pills {
   background-color: #303038;
 }
 
 #save-name-column {
+  width: 25%;
+}
+
+#weapon-name-column {
   width: 25%;
 }
 

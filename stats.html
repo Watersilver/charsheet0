@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="universal-style.css">
+
+    <title>My Webpage</title>
+  </head>
+  <body>
+    <!-- Navigation Barr -->
+    <header role="navigation">
+      <ul class = "nav nav-fill nav-pills">
+        <li class = "nav-item">
+          <a class = "nav-link" href = "index.html">Character</a>
+        </li>
+        <li class = "nav-item">
+          <a class = "nav-link active" href = "stats.html">Stats</a>
+        </li>
+        <li class = "nav-item">
+          <a class = "nav-link" href = "features.html">Features</a>
+        </li>
+        <li class = "nav-item">
+          <a class = "nav-link" href = "skills.html">Skills</a>
+        </li>
+        <li class = "nav-item">
+          <a class = "nav-link" href = "inventory.html">Inventory</a>
+        </li>
+      </ul>
+    </header>
+
+    <div id="stats">
+      <div class = "sheet container">
+        <div class = "row">
+          <section class = "col-xs-12 col-md-6">
+            <table id = "attributes" class = "table table-dark table-bordered table-hover">
+              <!-- <caption>Attributes</caption> -->
+              <thead>
+                <tr>
+                  <th scope = "col"></th>
+                  <th scope = "col">Score</th>
+                  <th scope = "col">Mod</th>
+                  <th scope = "col" colspan="2">Temp</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope = "row">Str</th>
+                  <td>-</td>
+                  <td>-</td>
+                  <td>-</td>
+                  <td>-</td>
+                </tr>
+                <tr>
+                  <th scope = "row">Dex</th>
+                  <td>-</td>
+                  <td>-</td>
+                  <td>-</td>
+                  <td>-</td>
+                </tr>
+                <tr>
+                  <th scope = "row">Con</th>
+                  <td>-</td>
+                  <td>-</td>
+                  <td>-</td>
+                  <td>-</td>
+                </tr>
+                <tr>
+                  <th scope = "row">Int</th>
+                  <td>-</td>
+                  <td>-</td>
+                  <td>-</td>
+                  <td>-</td>
+                </tr>
+                <tr>
+                  <th scope = "row">Wis</th>
+                  <td>-</td>
+                  <td>-</td>
+                  <td>-</td>
+                  <td>-</td>
+                </tr>
+                <tr>
+                  <th scope = "row">Cha</th>
+                  <td>-</td>
+                  <td>-</td>
+                  <td>-</td>
+                  <td>-</td>
+                </tr>
+              </tbody>
+            </table>
+            <table id = "saves" class = "table table-dark table-bordered table-hover">
+              <thead>
+                <tr>
+                  <th scope = "col" id = "save-name-column"></th>
+                  <th scope = "col">Base</th>
+                  <th scope = "col">Mod</th>
+                  <th scope = "col">Mag</th>
+                  <th scope = "col">Misc</th>
+                  <th scope = "col">Temp</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope = "row">Fortitude</th>
+                  <td>-</td>
+                  <td>-</td>
+                  <td>-</td>
+                  <td>-</td>
+                  <td>-</td>
+                </tr>
+                <tr>
+                  <th scope = "row">Reflex</th>
+                  <td>-</td>
+                  <td>-</td>
+                  <td>-</td>
+                  <td>-</td>
+                  <td>-</td>
+                </tr>
+                <tr>
+                  <th scope = "row">Will</th>
+                  <td>-</td>
+                  <td>-</td>
+                  <td>-</td>
+                  <td>-</td>
+                  <td>-</td>
+                </tr>
+              </tbody>
+            </table>
+            <table id = "BAB" class = "table table-dark table-bordered table-hover">
+              <thead>
+                <tr>
+                  <th scope = "col">Base Attack Bonus</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td scope = "row">-</td>
+                </tr>
+              </tbody>
+            </table>
+            <table id = "initiative" class = "table table-dark table-bordered table-hover">
+              <thead>
+                <tr>
+                  <th scope = "col">Initiative</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td scope = "row">-</td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+          <section class = "col-xs-12 col-md-6">
+            <table id = "HP" class = "table table-dark table-bordered table-hover">
+              <thead>
+                <tr>
+                  <th scope = "col">Current HP</th>
+                  <th scope = "col">Max HP</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td scope = "row">-</td>
+                  <td>-</td>
+                </tr>
+              </tbody>
+            </table>
+            <table id = "AC" class = "table table-dark table-bordered table-hover">
+              <thead>
+                <tr>
+                  <th colspan = "2" scope = "col">Armor Class</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope = "row">Base</th>
+                  <td>-</td>
+                </tr>
+                <tr title="Doesn't protect against touch attacks. Doesn't stack.">
+                  <th scope = "row">Armor Bonus</th>
+                  <td>-</td>
+                </tr>
+                <tr title="Doesn't protect against touch attacks. Doesn't stack.">
+                  <th scope = "row">Shield Bonus</th>
+                  <td>-</td>
+                </tr>
+                <tr title="Doesn't protect against touch attacks. Doesn't stack.">
+                  <th scope = "row">Natural Armor Bonus</th>
+                  <td>-</td>
+                </tr>
+                <tr title="Doesn't apply in situations that deny the target their Dex Bonus.">
+                  <th scope = "row">Max Dex Bonus</th>
+                  <td>-</td>
+                </tr>
+                <tr title="Doesn't stack.">
+                  <th scope = "row">Deflection Bonus</th>
+                  <td>-</td>
+                </tr>
+                <tr title="Doesn't apply in situations that deny the target their Dex Bonus. Stacks.">
+                  <th scope = "row">Dodge Bonus</th>
+                  <td>-</td>
+                </tr>
+                <tr>
+                  <th scope = "row">Other</th>
+                  <td>-</td>
+                </tr>
+              </tbody>
+              <thead>
+                <tr>
+                  <th colspan = "2" scope = "row">Total</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope = "row">AC</th>
+                  <td>-</td>
+                </tr>
+                <tr>
+                  <th scope = "row">Touch AC</th>
+                  <td>-</td>
+                </tr>
+                <tr title = "Use this in situations that deny the target their Dex Bonus">
+                  <th scope = "row">Flat-Footed</th>
+                  <td>-</td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <footer id="copyright">
+      Copyright &#169; 2019 Your Mother, Inc. All rights reserved.
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

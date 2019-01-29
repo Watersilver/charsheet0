@@ -25,18 +25,6 @@ $active-tab-color: #535363;
 //   box-sizing: border-box;
 // }
 
-@media (min-width: 500px) {
-  body {
-    background-color: red;
-  }
-}
-
-@media (max-width: 499px) {
-  body {
-    background-color: blue;
-  }
-}
-
 body {
   @extend %absposfullwidth;
   min-height: 100vh;
@@ -90,6 +78,10 @@ caption {
   padding-left: 11%;
 }
 
+img {
+  width: 100%;
+}
+
 .sheet {
   padding-top: 75px;
   background-color: $sheet-background-color;
@@ -97,6 +89,14 @@ caption {
   overflow: auto;
   min-height: 100vh;
   padding-bottom: 70px;
+
+  @media (min-width: 576px) {
+    background-color:$sheet-background-color;
+  }
+
+  @media (max-width: 575.98px) {
+    background-color:$site-background-color;
+  }
 }
 
 .nav-pills {
@@ -104,6 +104,10 @@ caption {
 }
 
 #save-name-column {
+  width: 25%
+}
+
+#weapon-name-column {
   width: 25%
 }
 

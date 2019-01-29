@@ -14,10 +14,14 @@
     <title>My Webpage</title>
   </head>
   <body>
+    <!-- Navigation Barr -->
     <header role="navigation">
       <ul class = "nav nav-fill nav-pills">
         <li class = "nav-item">
-          <a class = "nav-link" href = "index.html">Stats</a>
+          <a class = "nav-link" href = "index.html">Character</a>
+        </li>
+        <li class = "nav-item">
+          <a class = "nav-link" href = "stats.html">Stats</a>
         </li>
         <li class = "nav-item">
           <a class = "nav-link" href = "features.html">Features</a>
@@ -30,15 +34,73 @@
         </li>
       </ul>
     </header>
-    
+
     <div id="inventory">
       <div class = "sheet container">
-        <h1>Inventory!</h1>
+        <div class = "row">
+          <div class = "col-12">
+            <table class = "table table-dark table-bordered table-hover">
+              <thead>
+                <tr>
+                  <th scope = "col" id="weapon-name-column">Weapon</th>
+                  <th scope = "col">Attack Bonus</th>
+                  <th scope = "col">Attack</th>
+                  <th scope = "col">Damage</th>
+                  <th scope = "col">Type</th>
+                  <th scope = "col">Critical</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td scope="row">-</td>
+                  <td>-</td>
+                  <td>-</td>
+                  <td>-</td>
+                  <td>-</td>
+                  <td>-</td>
+                </tr>
+                <tr>
+                  <td scope="row" colspan="6">-</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class = "col-12">
+            <table id = "equipped-items" class = "table table-dark table-bordered table-hover">
+              <thead>
+                <tr>
+                  <th scope = "col">Equipped Items</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td title="Describe stuff about item here.">-</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class = "col-12">
+            <table id = "inv-table" class = "table table-dark table-bordered table-hover">
+              <thead>
+                <tr>
+                  <th scope = "col" colspan="2">Inventory</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td scope="row" title="Describe stuff about item here.">-</td>
+                  <td>amount</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
       </div>
-      <footer id="copyright">
-        Copyright &#169; 2019 Your Mother, Inc. All rights reserved.
-      </footer>
     </div>
+
+    <footer id="copyright">
+      Copyright &#169; 2019 Your Mother, Inc. All rights reserved.
+    </footer>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
