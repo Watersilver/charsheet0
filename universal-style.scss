@@ -11,7 +11,7 @@ $active-tab-color: #535363;
   width: 100%;
 }
 
-// This property (box-sizing) determines how content box
+// box-sizing determines how content box
 // dimensions behave when their padding and border change.
 // NOT the margin.
 // .class {
@@ -39,17 +39,20 @@ $active-tab-color: #535363;
 
 body {
   @extend %absposfullwidth;
+  min-height: 100vh;
+  display: block;
+  overflow: auto;
   background-color: $site-background-color;
   color: $site-text-color;
 
-  div>footer {
+  >footer {
     background-image: url("tactile_noise/tactile_noise.png");
-    background-repeat: repeat-x;
+    background-repeat: repeat;
   }
-}
 
-#copyright::before, #copyright::after {
-  content: "👻";
+  >footer::before, >footer::after {
+    content: "👻";
+  }
 }
 
 footer {
@@ -88,13 +91,20 @@ caption {
 }
 
 .sheet {
-  padding-top: 50px;
+  padding-top: 75px;
   background-color: $sheet-background-color;
-  height: 1975px
+  display: block;
+  overflow: auto;
+  min-height: 100vh;
+  padding-bottom: 70px;
 }
 
 .nav-pills {
   background-color: $navbar-color;
+}
+
+#save-name-column {
+  width: 25%
 }
 
 // Debug

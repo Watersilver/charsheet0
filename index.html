@@ -34,17 +34,16 @@
 
     <div id="stats">
       <div class = "sheet container">
-        <h1>Stats!</h1>
         <div class = "row">
           <section class = "col-xs-12 col-md-6">
             <table id = "attributes" class = "table table-dark table-bordered table-hover">
-              <caption>Attributes</caption>
+              <!-- <caption>Attributes</caption> -->
               <thead>
                 <tr>
                   <th scope = "col"></th>
-                  <th scope = "col">Score</td>
-                  <th scope = "col">Mod</td>
-                  <th scope = "col" colspan="2">Temp</td>
+                  <th scope = "col">Score</th>
+                  <th scope = "col">Mod</th>
+                  <th scope = "col" colspan="2">Temp</th>
                 </tr>
               </thead>
               <tbody>
@@ -92,15 +91,140 @@
                 </tr>
               </tbody>
             </table>
+            <table id = "saves" class = "table table-dark table-bordered table-hover">
+              <thead>
+                <tr>
+                  <th scope = "col" id = "save-name-column"></th>
+                  <th scope = "col">Base</th>
+                  <th scope = "col">Mod</th>
+                  <th scope = "col">Mag</th>
+                  <th scope = "col">Misc</th>
+                  <th scope = "col">Temp</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope = "row">Fortitude</th>
+                  <td>-</td>
+                  <td>-</td>
+                  <td>-</td>
+                  <td>-</td>
+                  <td>-</td>
+                </tr>
+                <tr>
+                  <th scope = "row">Reflex</th>
+                  <td>-</td>
+                  <td>-</td>
+                  <td>-</td>
+                  <td>-</td>
+                  <td>-</td>
+                </tr>
+                <tr>
+                  <th scope = "row">Will</th>
+                  <td>-</td>
+                  <td>-</td>
+                  <td>-</td>
+                  <td>-</td>
+                  <td>-</td>
+                </tr>
+              </tbody>
+            </table>
+            <table id = "BAB" class = "table table-dark table-bordered table-hover">
+              <thead>
+                <tr>
+                  <th scope = "col">Base Attack Bonus</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td scope = "row">-</td>
+                </tr>
+              </tbody>
+            </table>
           </section>
           <section class = "col-xs-12 col-md-6">
+            <table id = "HP" class = "table table-dark table-bordered table-hover">
+              <thead>
+                <tr>
+                  <th scope = "col">Current HP</th>
+                  <th scope = "col">Max HP</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td scope = "row">-</td>
+                  <td>-</td>
+                </tr>
+              </tbody>
+            </table>
+            <table id = "AC" class = "table table-dark table-bordered table-hover">
+              <thead>
+                <tr>
+                  <th colspan = "2" scope = "col">Armor Class</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope = "row">Base</th>
+                  <td>-</td>
+                </tr>
+                <tr title="Doesn't protect against touch attacks. Doesn't stack.">
+                  <th scope = "row">Armor Bonus</th>
+                  <td>-</td>
+                </tr>
+                <tr title="Doesn't protect against touch attacks. Doesn't stack.">
+                  <th scope = "row">Shield Bonus</th>
+                  <td>-</td>
+                </tr>
+                <tr title="Doesn't protect against touch attacks. Doesn't stack.">
+                  <th scope = "row">Natural Armor Bonus</th>
+                  <td>-</td>
+                </tr>
+                <tr title="Doesn't apply in situations that deny the target their Dex Bonus.">
+                  <th scope = "row">Max Dex Bonus</th>
+                  <td>-</td>
+                </tr>
+                <tr title="Doesn't stack.">
+                  <th scope = "row">Deflection Bonus</th>
+                  <td>-</td>
+                </tr>
+                <tr title="Doesn't apply in situations that deny the target their Dex Bonus. Stacks.">
+                  <th scope = "row">Dodge Bonus</th>
+                  <td>-</td>
+                </tr>
+                <tr>
+                  <th scope = "row">Other</th>
+                  <td>-</td>
+                </tr>
+              </tbody>
+              <thead>
+                <tr>
+                  <th colspan = "2" scope = "row">Total</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope = "row">AC</th>
+                  <td>-</td>
+                </tr>
+                <tr>
+                  <th scope = "row">Touch AC</th>
+                  <td>-</td>
+                </tr>
+                <tr title = "Use this in situations that deny the target their Dex Bonus">
+                  <th scope = "row">Flat-Footed</th>
+                  <td>-</td>
+                </tr>
+              </tbody>
+            </table>
           </section>
         </div>
       </div>
-      <footer id="copyright">
-        Copyright &#169; 2019 Your Mother, Inc. All rights reserved.
-      </footer>
     </div>
+
+    <footer id="copyright">
+      Copyright &#169; 2019 Your Mother, Inc. All rights reserved.
+    </footer>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

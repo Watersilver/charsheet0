@@ -15,15 +15,17 @@ footer, body {
   }
 }
 body {
+  min-height: 100vh;
+  display: block;
+  overflow: auto;
   background-color: #212126;
   color: Gainsboro;
 }
-body div > footer {
+body > footer {
   background-image: url("tactile_noise/tactile_noise.png");
-  background-repeat: repeat-x;
+  background-repeat: repeat;
 }
-
-#copyright::before, #copyright::after {
+body > footer::before, body > footer::after {
   content: "👻";
 }
 
@@ -58,13 +60,20 @@ caption {
 }
 
 .sheet {
-  padding-top: 50px;
+  padding-top: 75px;
   background-color: #43434f;
-  height: 1975px;
+  display: block;
+  overflow: auto;
+  min-height: 100vh;
+  padding-bottom: 70px;
 }
 
 .nav-pills {
   background-color: #303038;
+}
+
+#save-name-column {
+  width: 25%;
 }
 
 /*# sourceMappingURL=universal-style.css.map */
